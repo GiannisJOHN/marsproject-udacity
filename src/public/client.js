@@ -13,7 +13,7 @@ function load() {
 }
 
 function addRoverInformation(data) {
-    //console.log(data)
+    
     var { id, name, landing_date, launch_date, status } = data.photos[0].rover
     var html = /*html*/ `
         <div class='rover'>
