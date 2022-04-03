@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+}
+
+header {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+header > div {
+  width: 75%;
+  height: 340px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 0 10px;
+}
+
+header > div h1 {
+  font-family: 'Rubik Glitch', cursive;
+  color: rgb(200, 194, 255);
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+header > div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 1100px;
+  z-index: -1;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+main h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.roversOptions {
+  width: 75%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.roversOptions > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.roversOptions h2 {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.roversOptions button {
+  margin-top: 15px;
+  padding: 15px 44px;
+  font-size: 22px;
+  font-weight: 600;
+  background-color: rgb(35, 185, 148);
+  color: rgb(35, 45, 59);
+  border: solid 4px rgb(26, 116, 93);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+#root {
+  min-height: 800px;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.rover {
+  padding-top: 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rover p {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.gallery {
+  padding-top: 50px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 220px;
+  margin-top: 10px;
+}
+
+.gallery p {
+  max-width: 220px;
+  margin-bottom: 5px;
+}
+
+/* -------------------  TABLET  --------------------- */
+@media (max-width: 768px) {
+  header > div h1 {
+    font-size: 40px;
+  }
+  header > div img {
+    left: -400px;
+  }
+}
+
+/* -------------------  DESKTOP  -------------------- */
+
+@media (max-width: 1224px) {
+  .roversOptions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .roversOptions > div {
+    margin-bottom: 55px;
+  }
+}
+
+/* -------------------  LARGE SCREENS  -------------- */
+
+@media (max-width: 1824px) {
+  /* use mobile */
+}
